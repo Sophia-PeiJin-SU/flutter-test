@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 60.0,
-                backgroundImage: AssetImage('images/DV-2020.jpg'),
+                backgroundImage: AssetImage('images/photo.png'),
               ),
               Text(
                 'Sophia Su',
@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
-                    Icons.email_outlined,
+                    Icons.email,
                     color: Colors.teal,
                     size: 30.0,
                   ),
