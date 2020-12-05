@@ -1,20 +1,57 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
-        appBar: AppBar(
-          backgroundColor: Colors.blueGrey[800],
-          title: Center(child: Text('I Am Rich')),
-        ),
-        body: Center(
-          child: Image(
-            image: AssetImage('images/diamond.png'),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                width: 100.0,
+                color: Colors.red,
+                child: Text('Container 1'),
+              ),
+              SizedBox(width: 20.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      height:100.0,
+                      width: 100.0,
+                      color: Colors.yellow,
+                    ),
+                    Container(
+                      height:100.0,
+                      width: 100.0,
+                      color: Colors.green,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(width: 20.0,),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                color: Colors.blue,
+                child: Text('Container 3'),
+              ),
+            ],
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
