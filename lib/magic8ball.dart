@@ -26,7 +26,7 @@ class _Magic8BallPage extends State<Magic8BallPage> {
 
   void randomBall(){
     setState(() {
-      ballNumber = Random().nextInt(4) + 1;
+      ballNumber = Random().nextInt(5) + 1;
     });
   }
   @override
