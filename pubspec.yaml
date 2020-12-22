@@ -16,6 +16,8 @@ dependencies:
   audioplayers: ^0.17.0
   rflutter_alert: ^1.1.0
   font_awesome_flutter: ^8.10.1
+  geolocator: ^6.1.13
+  http: ^0.12.2
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +35,7 @@ flutter:
   - family: SourceSansPro
     fonts:
       - asset: fonts/SourceSansPro-Regular.ttf
+  - family: Spartan MB
+    fonts:
+      - asset: fonts/SpartanMB-Black.otf
+        weight: 900
