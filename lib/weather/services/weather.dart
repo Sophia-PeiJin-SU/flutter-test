@@ -1,4 +1,3 @@
-import 'package:testing_app/weather/screens/location_screen.dart';
 import '../services/location.dart';
 import '../services/networking.dart';
 
